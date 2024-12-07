@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   const password = document.getElementById('password').value;
 
   // Send login request to the server
-  fetch('https://final-grade.vercel.app', {  // Update to your Vercel URL
+  fetch('https://final-grade-727h-hlq8zrcsd-paulos-projects-2edbc18f.vercel.app', {  // Update to your Vercel URL
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
