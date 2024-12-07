@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   
     // Send login request to the server
     fetch('/login', {
-      method: 'POST',
+      method: 'Get',
       headers: {
         'Content-Type': 'application/json'
       },
