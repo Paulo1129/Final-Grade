@@ -1,4 +1,11 @@
-fetch('https://final-grade.vercel.app/api/login', {  // Update to your Vercel URL
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent form from submitting the default way
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  // Send login request to the server
+  fetch('https://final-grade.vercel.app', {  // Update to your Vercel URL
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -17,3 +24,4 @@ fetch('https://final-grade.vercel.app/api/login', {  // Update to your Vercel UR
     console.error('Error:', error);
     document.getElementById('error-message').innerText = 'Error occurred. Please try again.';
   });
+
